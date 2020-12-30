@@ -15,7 +15,7 @@ class TrackingListViewModel: ObservableObject {
     func getTrackingData() {
         Webservice().getCovidTrackingResult { trackingList in
             if let trackingList = trackingList {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+                DispatchQueue.main.async {
                     self.trackings = trackingList.map(TrackingViewModel.init)
                 }
             }
