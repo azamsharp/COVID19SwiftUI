@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		534A479C259CC8B30000C79F /* TrackingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534A479B259CC8B30000C79F /* TrackingCell.swift */; };
+		53C95FF3259CD65200237261 /* WavePointLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C95FF2259CD65200237261 /* WavePointLoader.swift */; };
 		8DA58987245A4DB8000CFAEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA58986245A4DB8000CFAEC /* AppDelegate.swift */; };
 		8DA58989245A4DB8000CFAEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA58988245A4DB8000CFAEC /* SceneDelegate.swift */; };
 		8DA5898B245A4DB8000CFAEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5898A245A4DB8000CFAEC /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		534A479B259CC8B30000C79F /* TrackingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingCell.swift; sourceTree = "<group>"; };
+		53C95FF2259CD65200237261 /* WavePointLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WavePointLoader.swift; sourceTree = "<group>"; };
 		8DA58983245A4DB8000CFAEC /* COVID19App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = COVID19App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA58986245A4DB8000CFAEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DA58988245A4DB8000CFAEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				534A479B259CC8B30000C79F /* TrackingCell.swift */,
+				53C95FF2259CD65200237261 /* WavePointLoader.swift */,
 				8DA5899C245A55B5000CFAEC /* Services */,
 				8DA5899B245A55A8000CFAEC /* View Models */,
 				8DA5899A245A55A3000CFAEC /* Models */,
@@ -186,6 +189,7 @@
 				8DA589A0245A55D4000CFAEC /* Tracking.swift in Sources */,
 				8DA589A2245A55E3000CFAEC /* TrackingViewModel.swift in Sources */,
 				8DA58987245A4DB8000CFAEC /* AppDelegate.swift in Sources */,
+				53C95FF3259CD65200237261 /* WavePointLoader.swift in Sources */,
 				8DA58989245A4DB8000CFAEC /* SceneDelegate.swift in Sources */,
 				8DA5899E245A55BF000CFAEC /* Webservice.swift in Sources */,
 				8DA5898B245A4DB8000CFAEC /* ContentView.swift in Sources */,

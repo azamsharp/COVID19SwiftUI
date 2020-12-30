@@ -15,18 +15,28 @@ struct ContentView: View {
     /// Indicate if data are fetching
     @State private var isLoading = true
 
-    init() {
-        self.trackingListVM.getTrackingData()
-    }
-
     var body: some View {
-        NavigationView {
-
-            List(self.trackingListVM.trackings, id: \.id) { tracking in
-                TrackingCell(tracking: tracking)
+        VStack {
+            if isLoading {
+                VStack {
+                    WavePointLoader()
+                    Text("Fetching data...")
+                }
+            } else {
+                NavigationView {
+                    List(self.trackingListVM.trackings, id: \.id) { tracking in
+                        TrackingCell(tracking: tracking)
+                    }
+                        .navigationBarTitle("Covid19 Tracking")
+                }
             }
-                .navigationBarTitle("Covid19 Tracking")
-        }
+        } .onAppear(perform: {
+            self.trackingListVM.getTrackingData()
+        }) .onReceive(self.trackingListVM.$trackings, perform: { valueReceived in
+            if !valueReceived.isEmpty {
+                isLoading = false
+            }
+        })
     }
 }
 
