@@ -19,7 +19,13 @@ struct ContentView: View {
         VStack {
             if isLoading {
                 VStack {
-                    WavePointLoader()
+                    ZStack {
+                        WavePointLoader(width: 100, height: 100, centerColor: Color(.clear), waveCenterenter: Color(red: 175 / 255, green: 122 / 255, blue: 63 / 255), waveMiddleColor: Color(red: 108 / 255, green: 128 / 255, blue: 76 / 255), waveEndingColor: Color(red: 171 / 255, green: 184 / 255, blue: 104 / 255))
+                        Image("covid-19")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 100, height: 100)
+                    }
                     Text("Fetching data...")
                 }
             } else {

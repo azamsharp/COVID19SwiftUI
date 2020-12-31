@@ -23,7 +23,7 @@ class TrackingListViewModel: ObservableObject {
     }
 }
 
-class TrackingViewModel {
+struct TrackingViewModel {
 
     private(set) var tracking: Tracking
 
